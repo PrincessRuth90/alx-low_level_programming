@@ -1,11 +1,10 @@
 #include <stdio.h>
 /**
- * main - main block
- *
- * Return: 0 
- */
+ *main - return the integal of the function
+ *Return: value of 0
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle\n");
+puts("\"Programming is like building a multilingual puzzle");
 return (0);
-}                  
+
+}
