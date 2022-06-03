@@ -13,7 +13,7 @@ int l;
 /*Initializes l to the ASCII value of 'a' */
 /*Prints out all the letters up until 'z' */
 for (l = 'a'; l <= 'z'; l++)
-if (l != 'e' && l != 'q') /* if e/q skip */
+if (l != 'e' && l != 'q') /* if e/q, skip */
 continue;
 putchar(l); /* Else, continue printing */
 
