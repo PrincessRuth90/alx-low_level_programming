@@ -4,7 +4,7 @@
  * between 0 and 9
  * Return: Always 0 (Success)
  */
-int main(0)
+int main(void)
 {
 int l;
 
