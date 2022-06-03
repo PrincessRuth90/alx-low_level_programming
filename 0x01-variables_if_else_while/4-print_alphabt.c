@@ -8,15 +8,15 @@
  */
 int main(void)
 {
-int l;
+int i;
 
-/*Initializes l to the ASCII value of 'a' */
-/*Prints out all the letters up until 'z' */
-for (l = 'a'; l <= 'z'; l++)
-if (l != 'e' && l != 'q') /* if e/q, skip */
-continue;
-putchar(l); /* Else, continue printing */
-
+for (i = 97; i < 123; i++)
+{ 
+if (i != 101 && i != 113)
+{	
+putchar(i);
+}
+}
 putchar ('\n');
 return (0);
 }
