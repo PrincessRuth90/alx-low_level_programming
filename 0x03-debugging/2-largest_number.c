@@ -5,9 +5,10 @@
  * @a: first integar
  * @b: second integar
  * @c: third integar
- */ 
+ * Return: largest number
+ */
 
-int main(a, b, c);
+int largest_number(int a, int b, int c)
 {
 int largest;
 
@@ -27,7 +28,6 @@ else
 {
 largest = b;
 }
-printf("%d is the largest number\n", largest);
 
 return (largest);
 }
