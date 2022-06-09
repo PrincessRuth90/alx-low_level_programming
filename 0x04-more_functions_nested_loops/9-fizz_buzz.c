@@ -1,6 +1,7 @@
 #include <stdio>
+#include "main.h"
 /**
- * main - check the code for Main School students.
+ * main - Prints the numbers from 1 to 100.
  *
  * Return: void.
  */
