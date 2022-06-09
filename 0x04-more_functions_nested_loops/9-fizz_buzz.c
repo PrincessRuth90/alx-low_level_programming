@@ -1,5 +1,6 @@
 #include <stdio>
 #include "main.h"
+
 /**
  * main - Prints the numbers from 1 to 100.
  *
