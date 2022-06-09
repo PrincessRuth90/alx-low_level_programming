@@ -2,9 +2,8 @@
 #include "main.h"
 
 /**
- * main - Prints the numbers from 1 to 100.
- *
- * Return: void.
+ * main - contains all codes
+ * Return: Always 0
  */
 
 int main(void)
