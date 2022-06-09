@@ -1,6 +1,6 @@
 #include <stdio>
 /**
- * main - check the code for main candidates.
+ * main - check the code for Holberton School students.
  *
  * Return: void.
  */
