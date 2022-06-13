@@ -4,7 +4,7 @@
  * @n: pointer to an int
  * eturn: Always 0 (Success)
  */
-void reset_to_98(*n)
+void reset_to_98(int *n)
 {
 *n = 98;
 }
