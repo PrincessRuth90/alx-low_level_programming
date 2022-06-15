@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "main.h"
+int main(void);
 
-int main(void)
 {
 	int n;
 	int a[5];
@@ -14,7 +15,6 @@ int main(void)
 	 * - you are not allowed to use a
 	 * - you are not allowed to modify p
 	 * - only one statement
-	 * main - print the magic
 	 * - you are not allowed to code anything else than this line of code
 	 */
 	*(p + 5) = 98;
