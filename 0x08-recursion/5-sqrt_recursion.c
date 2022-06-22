@@ -10,7 +10,7 @@ return (halp(n, 1));
 }
 /**
  * halp - function to solve sqrt_recursion
- * @c: number to determine if squarerrot
+ * @c: number to determine if squareroot
  * @i: Incrementer to compare against c
  * Return: square root if natural or -1 i none found
  */
