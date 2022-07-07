@@ -30,7 +30,7 @@ printf("%c", va_arg(list, int));
 }
 
 /**
- * print_string - prints string
+ * print_str - prints string
  * @list: argument from print_all
  */
 void print_str(va_list list)
