@@ -34,7 +34,7 @@ printf("%c", va_arg(list, int));
  * print_string - prints string
  * @list: arg from print_all
  */
-void print_str(va_list list)
+void print_str(va_list list);
 {
 char *s = va_arg(list, char *);
 
@@ -44,10 +44,7 @@ s == NULL ? printf("(nil)") : printf("%s", s);
 
 /**
  * print_all - prints anything
- * @c: char 
- * @i: integer
- * @f: float
- * @s: string
+ * @format: arg to print
  * Return: nil
  */
 void print_all(const char * const format, ...)
@@ -69,7 +66,7 @@ va_start(list, format);
 while (format && format[i])
 {
 j = 0;
-while j < 4
+while (j < 4)
 {
 if (*printType[j].type == format[i])
 {
