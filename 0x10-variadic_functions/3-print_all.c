@@ -1,6 +1,5 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <stdarg.h>
 #include <stdlib.h>
 
 /**
@@ -32,9 +31,9 @@ printf("%c", va_arg(list, int));
 
 /**
  * print_string - prints string
- * @list: arg from print_all
+ * @list: argument from print_all
  */
-void print_str(va_list list);
+void print_str(va_list list)
 {
 char *s = va_arg(list, char *);
 
