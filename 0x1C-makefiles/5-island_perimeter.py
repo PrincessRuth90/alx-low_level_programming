@@ -1,38 +1,31 @@
 #!/usr/bin/python3
-
 """
-Module Island Perimeter
+Defines an island perimeter
 """
 
 
 def island_perimeter(grid):
-    """ Calculate perimeter of grid of an island
-     The grid represents water by 0 and land by 1.
-    Args:
-        grid (list): A list of list of integers representing an island.
-    Returns:
-        The perimeter of the island defined in grid.
     """
-    p = 0
-    height = len(grid)
+    Returns the island perimeter of a grid
+    grid is a list of list of integers:
+        0 represents a water zone
+        1 represents a land zone
+        One cell is a square with side length 1
+        Grid cells are connected horizontally/vertically
+        Grid is rectangular, width and height don’t exceed 100
+    Grid is completely surrounded by water, and there is one island
+    """
     width = len(grid[0])
-    for lth in range(height):
-        for bth in range(width):
-            if (grid[lth][bth] == 1):
-                if (lth == 0):
-                    p += 1
-                if (grid[lth - 1][bth]) == 0:
-                    p += 1  # top surrounded by water
-                if (lth == (height - 1)):
-                    p += 1
-                if (grid[lth + 1][bth]) == 0:
-                    p += 1  # bottom surrounded by water
-                if (bth == 0):
-                    p += 1
-                if (grid[lth][bth - 1] == 0):
-                    p += 1  # left surrounded by water
-                if (bth == (width - 1)):
-                    p += 1
-                if (grid[lth][bth + 1]) == 0:
-                    p += 1  # right surrounded by water
-    return p
+    height = len(grid)
+    grid_edges = 0
+    grid_size = 0
+
+    for m in range(height):
+        for n in range(width):
+            if(grid[m][n] == 1):
+                grid_size += 1
+                if (n > 0 and grid[m][n - 1] == 1):
+                    grid_edges += 1
+                if (m > 0 and grid[m - 1][n] == 1):
+                    grid_edges += 1
+    return (grid_size * 4 - grid_edges * 2)
